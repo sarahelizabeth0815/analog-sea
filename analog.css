@@ -1,42 +1,51 @@
-* {
+body * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0; /* Tricky: override browser default */
-  padding: 80px;
+  padding: 60px 0 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px; /* Set baseline font-size for whole page */
   background-color: #47AEFD;
 }
 
-header img {
-	height: 35px;
-	margin: 20px;
+/* Potentially tricky: fieldset comes with default styles we must override. */
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
-form {
+.logo {
+	display: block;
+	width: auto;
+	height: 35px;
+	margin: 0 auto 30px;
+}
+
+.signup-form {
 	padding: 40px;
 	width: 400px;
 	background-color: white;
-	margin-left: 0px;
+	margin: 0 auto;
 	border-radius: 4px;
 }
 
-form p {
+.signup-form legend {
 	font-size: 24pt;
 	color: dimgrey;
+	text-align: center;
+	margin: 0 auto 45px;
 }
 
 input, button {
+	display: block;
 	width: 320px;
 	border: 2px solid lightgray;
 	padding: 15px;
-	margin: 20px;
+	margin: 10px auto 20px;
 	border-radius: 4px;
-}
-
-input {
 	color: gray;
 }
 
@@ -54,8 +63,12 @@ button:hover {
 	background-color: #2DB363;
 }
 
-footer p, a {
+footer {
+	text-align: center;
 	color: white;
-	font-style: none;
 	font-weight: bold;
+}
+
+footer a {
+	color: white;
 }

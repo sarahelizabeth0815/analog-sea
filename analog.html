@@ -16,17 +16,19 @@
 
 <body>
 	<header>
-		<a href="#"><img src="images/logo.png" alt="AnalogSea logo"></a>
+		<a href="#"><img src="images/logo.png" alt="AnalogSea" class="logo"></a>
 	</header>
 
 	<main>
-		<form action="signup/" method="post">
-			<p>Sign up</p>
-			<label for="email">Email</label>
-			<input type="email" name="email" placeholder="foo@bar.com" required>
-			<label for="password">Password</label>
-			<input type="password" name="password" placeholder="1234passw0rd" required>
-			<button name="submit" type="submit" value="submit-true">Sign Up</button>
+		<form role="form" action="/signup" method="post" class="signup-form">
+		  	<fieldset>
+				<legend>Sign up</legend>
+				<label for="email">Email</label>
+				<input type="email" name="email" placeholder="foo@bar.com" required/>
+				<label for="password">Password</label>
+				<input type="password" name="password" placeholder="1234passw0rd" required/>
+				<button name="submit" type="submit" value="submit-true">Sign Up</button>
+		  	</fieldset>
 		</form>
 	</main>
 
