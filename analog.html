@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<meta name="analog sea" content="create an account with AnalogSea">
+
+	<!-- fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- reset -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="analog.css">
+</head>
+
+<body>
+	<div class="container">
+	<header>
+		<a href="#"><img src="images/logo.png" alt="AnalogSea logo"></a>
+	</header>
+
+	<main>
+		<form action="signup/" method="post">
+			<p>Sign up</p>
+			<label for="email" required >Email</label>
+			<input type="email" name="email" placeholder="foo@bar.com">
+
+			<label for="password" required >Password</label>
+			<input type="password" name="password" placeholder="1234passw0rd">
+
+			<button name="submit" type="submit" value="submit-true">Sign Up</button>
+		</form>
+	</main>
+
+	<footer>
+		<p>Already have an account? <a href="/login">Log in</a></p>
+	</footer>
+	</div>
+</body>

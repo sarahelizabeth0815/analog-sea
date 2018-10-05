@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* Tricky: override browser default */
+  padding: 80px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; /* Set baseline font-size for whole page */
+  background-color: #47AEFD;
+}
+
+/*
+.container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+
+header img {
+	height: 35px;
+	margin: 20px;
+}
+
+form {
+	padding: 40px;
+	width: 400px;
+	background-color: white;
+	margin-left: 0px;
+	border-radius: 4px;
+}
+
+form p {
+	font-size: 24pt;
+	color: dimgrey;
+}
+
+input, button {
+	width: 320px;
+	border: 2px solid lightgray;
+	padding: 15px;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+input {
+	color: gray;
+}
+
+button {
+	width: 320px;
+	padding: 15px;
+	background-color: #56D589;
+	color: white;
+	font-size: 20pt;
+	font-weight: bold;
+	border: none;
+}
+
+button:hover {
+	background-color: #2DB363;
+}
+
+footer p, a {
+	color: white;
+	font-style: none;
+	font-weight: bold;
+}
